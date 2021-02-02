@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+int main (void)
+{
+    const char* str1 = "12345";
+    const char* str2 = "54321";
+    const char* str3 = "14258";
+    const char* str4 = "25431";
+    const char* str5 = "11132";
+    const char* str6 = "21131";
+
+    const char* left [3] = {str1,str3,str5};
+    const char* right [3] = {str2,str4,str6};
+    
+    for (int i=0;i<3;i++)
+    {
+    printf ("Compare %s and %s\n",left[i],right[i]);
+    {
+        if ( strcmp (left[i],right[i]) == 0)
+        {
+            printf("TRUE\n");
+        }
+        else
+        {
+            printf("FALSE\n");
+        }
+        
+    }
+    }
+    return 0;
+}
+
